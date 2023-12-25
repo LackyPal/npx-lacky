@@ -1,0 +1,44 @@
+{
+  "name": "lacky",
+  "version": "1.0.1",
+  "description": "A personal card of me (@lackypal)",
+  "main": "/bin/card.js",
+  "bin": {
+    "lacky": "./bin/card.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lackypal/npx-lacky.git"
+  },
+  "homepage": "https://github.com/lackypal/npx-lacky#readme",
+  "scripts": {
+    "prepublish": "npm run build",
+    "build": "node build.js",
+    "dev": "npm run build && node ./bin/card.js",
+    "lint": "standard"
+  },
+  "keywords": [
+    "card",
+    "npm",
+    "npm card",
+    "npx",
+    "npx card",
+    "business card",
+    "npx-lacky",
+    "lacky"
+  ],
+  "author": "Lacky Pal",
+  "files": [
+    "bin/card.js",
+    "bin/output"
+  ],
+  "devDependencies": {
+    "boxen": "^2.1.0",
+    "chalk": "^2.4.1",
+    "standard": "^12.0.1"
+  },
+  "bugs": {
+    "url": "https://github.com/lackypal/npx-lacky/issues"
+  },
+  "dependencies": {}
+}
